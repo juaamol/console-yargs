@@ -1,7 +1,6 @@
 const { argv } = require('./config/yargs.config');
 const { createFile, listTable } = require('./multiplication/multiplication');
 
-
 let command = argv._[0];
 
 switch (command) {

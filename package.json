@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/juaamol/console-yargs#readme",
   "dependencies": {
+    "colors": "^1.3.3",
     "yargs": "^13.2.4"
   },
   "devDependencies": {}

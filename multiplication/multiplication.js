@@ -1,10 +1,16 @@
 let fs = require('fs');
+const colors = require('colors');
+const colorsSafe = require('colors/safe');
 
 let listTable = (base, limit = 10) => {
     if (!Number(base)) {
         reject(`${base} is not a number`);
         return;
     }
+
+    console.log('=========================='.green);
+    console.log(`======= Table for ${base}======`.green);
+    console.log('=========================='.green);
 
     for (let i = 0; i <= limit; i++) {
         console.log(`${base} * ${i} = ${base * i}`);
@@ -27,7 +33,7 @@ let createFile = (base, limit = 10) => {
             if (err)
                 reject(err);
             else
-                resolve(`table-${base}.txt`);
+                resolve(colorsSafe.green(`table-${base}.txt`));
         });
     });
 }
