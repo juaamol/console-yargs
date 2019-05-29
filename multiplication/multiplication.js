@@ -1,16 +1,26 @@
 let fs = require('fs');
 
-let table = '';
-let createFile = (base) => {
+let listTable = (base, limit = 10) => {
+    if (!Number(base)) {
+        reject(`${base} is not a number`);
+        return;
+    }
+
+    for (let i = 0; i <= limit; i++) {
+        console.log(`${base} * ${i} = ${base * i}`);
+    }
+}
+
+let createFile = (base, limit = 10) => {
     return new Promise((resolve, reject) => {
+        let table = '';
         if (!Number(base)) {
             reject(`${base} is not a number`);
             return;
         }
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i <= limit; i++) {
             table += `${base} * ${i} = ${base * i}\n`
-            console.log(`${base} * ${i} = ${base * i}`);
         }
 
         fs.writeFile(`./tables/table-${base}.txt`, table, (err) => {
@@ -22,4 +32,4 @@ let createFile = (base) => {
     });
 }
 
-module.exports = { createFile };
+module.exports = { createFile, listTable };

@@ -1,0 +1,28 @@
+{
+  "name": "console-yargs",
+  "version": "1.0.0",
+  "description": "Command line application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juaamol/console-yargs.git"
+  },
+  "keywords": [
+    "npm",
+    "console",
+    "yargs"
+  ],
+  "author": "juaamol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juaamol/console-yargs/issues"
+  },
+  "homepage": "https://github.com/juaamol/console-yargs#readme",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {}
+}
