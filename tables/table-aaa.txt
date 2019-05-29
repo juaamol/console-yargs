@@ -1,0 +1,10 @@
+aaa * 0 = NaN
+aaa * 1 = NaN
+aaa * 2 = NaN
+aaa * 3 = NaN
+aaa * 4 = NaN
+aaa * 5 = NaN
+aaa * 6 = NaN
+aaa * 7 = NaN
+aaa * 8 = NaN
+aaa * 9 = NaN

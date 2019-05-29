@@ -1,15 +1,8 @@
-let fs = require('fs');
+const { createFile } = require('./multiplication/multiplication');
 
-let base = 2;
-let table = '';
+let base = 'aaa';
 
-for (let i = 0; i < 10; i++) {
-    table += `${base} * ${i} = ${base * i}\n`
-    console.log(`${base} * ${i} = ${base * i}`);
-}
 
-fs.writeFile(`./tables/table-${base}.txt`, table, (err) => {
-    if (err) throw err;
-
-    console.log(`File table-${base}.txt has been created`);
-});
+createFile(base)
+    .then((filename) => console.log(`File ${filename} created`))
+    .catch((error) => console.log(error));
