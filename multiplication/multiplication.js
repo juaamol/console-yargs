@@ -32,4 +32,4 @@ let createFile = (base, limit = 10) => {
     });
 }
 
-module.exports = { createFile, listTable };
+module.exports = { createFile, listTable, };
