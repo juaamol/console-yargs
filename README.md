@@ -1,4 +1,4 @@
-# console-yargs
+# Multiplication table using console-yargs
 
 Simple application to try out npm yargs module.
 This console app takes a two numbers and displays/saves the multiplication table of the argument --base from 0 to --limit.
